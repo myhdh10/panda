@@ -5,7 +5,7 @@ import time
 import struct
 import itertools
 import threading
-from typing import Any, Union, List
+from typing import Any, List
 
 from panda import Panda
 
@@ -35,7 +35,6 @@ def flood_tx(panda):
 
 if __name__ == "__main__":
   serials = Panda.list()
-  receiver: Union[Panda, PandaJungle]
   if JUNGLE:
     sender = Panda()
     receiver = PandaJungle()
